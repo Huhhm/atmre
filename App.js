@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 import loginReducer from './src/reducers/loginReducer';
 
 import LoginScreen from './src/screens/Login';
+import RegisterScreen from './src/screens/Register';
 import HomeScreen from "./src/screens/Home";
 
 const Stack = createNativeStackNavigator();
@@ -19,8 +20,9 @@ const MyStack = () => {
   return (
     
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Login"  component={LoginScreen} options={{headerShown: false}} />
+        <Stack.Screen name="Register"  component={RegisterScreen} options={{headerShown: false}} />
+        <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
       </Stack.Navigator>
     
   );
