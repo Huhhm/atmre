@@ -8,21 +8,21 @@ const initialState = {
 };
 const atmReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_ATM_LOADING':
+    case actionTypes.GET_ATM_LOADING:
       return {
-        data: {},
+        data: [],
         loading: true,
         error: false,
       };
-    case 'GET_ATM_SUCCESS':
+    case actionTypes.GET_ATM_SUCCESS:
       return {
         data: action.data,
         loading: false,
         error: false,
       };
-    case 'GET_ATM_FAIL':
+    case actionTypes.GET_ATM_FAIL:
       return {
-        data: {},
+        data: [],
         loading: false,
         error: true,
       };

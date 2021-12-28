@@ -17,7 +17,9 @@ export const getAtmFail = () => {
     }
 } */}
 export const doGetAtm = () => {
-    return { 
+    return (
+        {
         type: actionTypes.DO_GET_ATM 
-    }
+        }
+    )
   };

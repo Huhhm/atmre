@@ -4,10 +4,7 @@ import * as actionTypes from '../actions/actionTypes'
 
 import {takeEvery, put, call} from 'redux-saga/effects';
 
-function fetDog () {
-    return fetch('https://dog.ceo/api/breeds/image/random')
-                .then(res => res.json())
-}
+
 function* fetchAtmAsync() {
     try {
       yield put({type:actionTypes.GET_ATM_LOADING});

@@ -6,18 +6,22 @@ import {
     Button
 } from "react-native";
 import {useDispatch, useSelector} from 'react-redux';
-import atmReducer from '../reducers/atmReducer';
-import doGetAtm from '../actions/atm'
+import {doGetAtm} from '../actions/atm';
 const DodgeScreen = (props) => {
     const dispatch = useDispatch();
     const dogdata = useSelector(state => state.atmReducer);
+    const getUse = () => {
+        dispatch(doGetAtm());
+    }
+    
     useEffect(() => {
-            console.log(dogdata)
+        getUse();
+        console.log(dogdata);
       },[]);
     return (
         <View>
-        <Button onClick={() => dispatch(doGetAtm())} title="show dog"/>
-          <Text>{dogdata.data}</Text>
+            
+          <Text>{dogdata.data.message}</Text>
       </View>
     )
 }
