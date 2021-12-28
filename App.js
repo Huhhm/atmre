@@ -46,7 +46,7 @@ function CustomDrawerContent(props) {
   return (
     <DrawerContentScrollView {...props}>
       <View>
-      <Text>Hello111</Text>
+      <Text>I Stashed my code</Text>
           
       </View>
     </DrawerContentScrollView>
