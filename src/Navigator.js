@@ -43,7 +43,7 @@ const MyStack = () => {
     return (
       <DrawerContentScrollView {...props}>
         <View>
-        <Text>I Stashed my code</Text>
+        <Text>I Stashed my code Hi</Text>
             
         </View>
       </DrawerContentScrollView>
