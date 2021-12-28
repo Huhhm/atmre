@@ -14,6 +14,8 @@ import { createDrawerNavigator,DrawerContentScrollView } from '@react-navigation
 import LoginScreen from './screens/Login';
 import RegisterScreen from './screens/Register';
 import HomeScreen from "./screens/Home";
+import DodgeScreen from "./screens/Dodge";
+
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -29,6 +31,7 @@ const MyStack = () => {
           <Stack.Screen name="Login"  component={LoginScreen} options={{headerShown: false}} />
           <Stack.Screen name="Register"  component={RegisterScreen} options={{headerShown: false}} />
           <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
+          <Stack.Screen name="Dodge" component={DodgeScreen} options={{headerShown: false}}/>
         </Stack.Navigator>
       
     );

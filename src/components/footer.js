@@ -18,9 +18,9 @@ const Footer = ({navigation}) => (
             <Icon name="home" size={30} color="#900" />
                 <Text>Home</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{width:windowWidth*0.33,alignItems:'center',backgroundColor:'#fff'}}>
+            <TouchableOpacity style={{width:windowWidth*0.33,alignItems:'center',backgroundColor:'#fff'}} onPress={() => navigation.navigate('Dodge')}>
             <Icon name="home" size={30} color="#900" />
-                <Text>????</Text>
+                <Text>Dog</Text>
             </TouchableOpacity>
             <TouchableOpacity style={{width:windowWidth*0.33,alignItems:'center',backgroundColor:'#fff'}} onPress={() => navigation.navigate('Login')}>
             <Icon name="user" size={30} color="#900" />
