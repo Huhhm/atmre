@@ -1,7 +1,8 @@
-
+const apiDef = "http://192.168.0.112:5000/";
 const api = {
-    login_api : 'http://192.168.0.112:5000/api/v1/auth/login',
-    get_trans_api :'http://192.168.0.112:5000/',
-    get_atms :'http://192.168.0.112:5000/api/v1/atms'
+    loginApi : apiDef + 'api/v1/auth/login',
+    getAtms : apiDef + 'api/v1/atms',
+    registerApi: apiDef + 'api/v1/auth/register',
 };
 export default api ;
+
