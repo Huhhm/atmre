@@ -46,7 +46,7 @@ const LoginScreen = ({navigation}) => {
             password: password,
             user: data,
           });
-          navigation.navigate('Home');
+          navigation.navigate('Dodge');
         } else {
           Alert.alert('Wrong password or username');
         }
